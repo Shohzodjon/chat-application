@@ -1,0 +1,88 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background-color:rgb(102, 226, 235);
+}
+
+.joinInnerContainer {
+  width: 20%;
+}
+
+.joinInput {
+  border-radius:.5rem;
+  border: 1px solid #222;
+  font-size: 1rem;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.heading {
+  color: rgb(12, 11, 11);
+  font-size: 2.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.1rem;
+    background: linear-gradient(45deg , rgb(47, 0, 255), rgb(220, 20, 177));
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    width: 100%;
+    animation-name: buttonAnime;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes buttonAnime {
+    0%, 50%, 100%{
+     
+      transform: scale(.9);
+    }
+     80%{
+     
+      transform: scale(1);
+    }
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .joinInnerContainer {
+    width: 90%;
+  }
+
+
+}
+
+button:focus {
+  outline: 0;
+}
